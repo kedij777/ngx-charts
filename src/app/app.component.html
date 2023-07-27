@@ -681,6 +681,18 @@
         (select)="select($event)"
       >
       </ngx-charts-number-card>
+      <ngx-charts-map-chart
+      *ngIf="chartType === 'map-chart'"
+      class="chart-container"
+      [view]="view"
+      [scheme]="colorScheme"
+      cardColor="#232837"
+      emptyColor="#1e222e"
+      [results]="single"
+      [animations]="animations"
+      (select)="select($event)"
+    >
+    </ngx-charts-map-chart>
       <ngx-charts-box-chart
         *ngIf="chartType === 'box-plot'"
         class="chart-container"
