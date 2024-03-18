@@ -886,3 +886,30 @@ export const sankeyData: SankeyData = [
   { source: 'Republic of Equatorial Guinea', target: 'Republic of Costa Rica', value: 30 },
   { source: 'Republic of Equatorial Guinea', target: 'Portugal', value: 5 }
 ];
+
+export const nestedPieData: MultiSeries = [
+  { name: 'Marketing', series: [
+      { value: 234, name: 'Union Ads' },
+      { value: 135, name: 'Video Ads' }
+    ]
+  },
+  { name: 'Others', series: [
+      { value: 102, name: 'Others' }
+    ]
+  },
+  { name: 'Search Engine', series: [
+      { value: 251, name: 'Google' },
+      { value: 147, name: 'Bing' },
+      { value: 1048, name: 'Baidu' },
+    ]
+  }
+];
+
+// export function innerData(nestedPieData) : SingleSeries {
+//   return nestedPieData.map(item => item.data).flat();
+// }
+
+// export function outterData(nestedPieData) : SingleSeries {
+//   nestedPieData.map(item => {
+//   const sum = item.data.reduce((acc, curr) => acc + curr.value, 0);
+//   return { name: item.group, value: sum });

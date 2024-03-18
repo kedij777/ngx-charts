@@ -13,6 +13,7 @@ import { TreeMapModule } from './tree-map/tree-map.module';
 import { GaugeModule } from './gauge/gauge.module';
 import { ngxChartsPolyfills } from './polyfills';
 import { SankeyModule } from './sankey/sankey.module';
+// import { NestedPieModule } from './nested-pie/nested-pie.module'
 
 @NgModule({
   exports: [

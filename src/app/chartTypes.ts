@@ -951,6 +951,24 @@ const chartGroups = [
           'maxXAxisTickLength',
           'maxYAxisTickLength'
         ]
+      },
+      {
+        name: 'Nested Pie Chart',
+        selector: 'nested-pie-chart',
+        inputFormat: 'multiSeries',
+        options: [
+          'animations',
+          'colorScheme',
+          'gradient',
+          'showLegend',
+          'legendTitle',
+          'legendPosition',
+          'doughnut',
+          'arcWidth',
+          'explodeSlices',
+          'showLabels',
+          'tooltipDisabled'
+        ]
       }
     ]
   }
